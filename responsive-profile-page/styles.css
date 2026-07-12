@@ -46,6 +46,10 @@ body {
   background: var(--surface);
 }
 
+.wide {
+  grid-column: 1 / -1;
+}
+
 .eyebrow {
   margin: 0 0 12px;
   color: var(--accent);
@@ -90,6 +94,30 @@ ul {
   line-height: 1.8;
 }
 
+.roadmap {
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+}
+
+.roadmap article {
+  padding: 18px;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+}
+
+h3 {
+  margin: 0 0 10px;
+  font-size: 18px;
+}
+
+.roadmap p {
+  margin: 0;
+  color: var(--muted);
+  line-height: 1.6;
+}
+
 @media (max-width: 720px) {
   .page {
     grid-template-columns: 1fr;
@@ -99,5 +127,8 @@ ul {
   h1 {
     font-size: 32px;
   }
-}
 
+  .roadmap {
+    grid-template-columns: 1fr;
+  }
+}
