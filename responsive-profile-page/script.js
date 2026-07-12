@@ -1,4 +1,7 @@
 const themeButton = document.querySelector("#themeButton");
+const nameInput = document.querySelector("#nameInput");
+const greetingButton = document.querySelector("#greetingButton");
+const greetingMessage = document.querySelector("#greetingMessage");
 
 themeButton.addEventListener("click", () => {
   document.body.classList.toggle("dark");
@@ -8,4 +11,9 @@ themeButton.addEventListener("click", () => {
   } else {
     themeButton.textContent = "Switch to Dark";
   }
+});
+
+greetingButton.addEventListener("click", () => {
+  const name = nameInput.value.trim() || "visitor";
+  greetingMessage.textContent = `Hello, ${name}. Keep building.`;
 });

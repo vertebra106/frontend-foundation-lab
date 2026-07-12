@@ -78,6 +78,12 @@ h2 {
   line-height: 1.7;
 }
 
+.section-text {
+  margin: 12px 0 18px;
+  color: var(--muted);
+  line-height: 1.6;
+}
+
 button {
   border: 0;
   border-radius: 6px;
@@ -85,6 +91,33 @@ button {
   color: #ffffff;
   background: var(--accent);
   cursor: pointer;
+}
+
+.form-row {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+label {
+  font-weight: 700;
+}
+
+input {
+  min-width: 220px;
+  flex: 1;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 10px 12px;
+  color: var(--text);
+  background: var(--surface);
+}
+
+.message {
+  margin: 16px 0 0;
+  color: var(--accent);
+  font-weight: 700;
 }
 
 ul {
@@ -130,5 +163,10 @@ h3 {
 
   .roadmap {
     grid-template-columns: 1fr;
+  }
+
+  input,
+  button {
+    width: 100%;
   }
 }
